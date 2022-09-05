@@ -1,0 +1,24 @@
+---
+title: Puzzles
+description: play some puzzles to learn
+image: edge2edge-media-x21KgBfOd_4-unsplash.jpg
+tags: option
+btn: check
+puzzleNumber: 1
+---
+
+{% extends "layouts/game.njk" %}
+
+{% block left %}
+    <h2 class="game__title">Puzzle {{ puzzleNumber }}</h2>
+    <div class="game__game">
+        <h3 class="game__subtitle">Goal</h3>
+        <p class="game__goal">
+            Culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
+            voluptartem.
+        </p>
+    </div>
+{% endblock %}
+{% block right %}
+    {% include "components/btn.njk" %}
+{% endblock %}

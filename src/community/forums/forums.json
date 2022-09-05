@@ -1,0 +1,4 @@
+{
+    "permalink": "community/{{ title | slugify }}/",
+    "return": "/community"
+} 

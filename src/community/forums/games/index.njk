@@ -1,0 +1,14 @@
+---
+title: Games
+description: play some puzzles to learn
+image: edge2edge-media-x21KgBfOd_4-unsplash.jpg
+tags: forum
+---
+
+{% extends "layouts/forum.njk" %}
+
+{% block posts %}
+    {% for p in collections.postgame %}
+        {% include "components/card-post.njk" %}
+    {% endfor %}
+{% endblock %}

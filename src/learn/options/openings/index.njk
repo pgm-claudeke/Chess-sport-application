@@ -1,0 +1,14 @@
+---
+title: Openings
+description: Learn different opening moves
+image: jent-jiang-fKfxvNQFmQ8-unsplash.jpg
+tags: option
+---
+
+{% extends "layouts/columns.njk" %}
+
+{% block list %}
+    {% for p in collections.opening %}
+        {% include "components/card-small.njk" %}
+    {% endfor %}
+{% endblock %}

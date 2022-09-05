@@ -1,0 +1,27 @@
+---
+title: 3-Check
+description: play some puzzles to learn
+image: edge2edge-media-x21KgBfOd_4-unsplash.jpg
+---
+{% extends "layouts/game.njk" %}
+
+{% block left %}
+    <div class="player-top">
+        {% set userName= "player 1"%}
+        {% set level= "1"%}
+        {% set userImage= "user.jpg"%}
+        {% include "components/card-user-small.njk" %}
+    </div>
+{% endblock %}
+{% block right %}
+    <div class="player">
+        {% set userName= "player 1"%}
+        {% set level= "1"%}
+        {% set userImage= "user.jpg"%}
+        {% include "components/card-user-small.njk" %}
+    </div>
+    {% set userName= "player 2"%}
+    {% set level= "4"%}
+    {% set userImage= "user.jpg"%}
+    {% include "components/card-user-small.njk" %}
+{% endblock %}

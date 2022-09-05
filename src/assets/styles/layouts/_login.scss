@@ -1,0 +1,53 @@
+
+.main--login {
+    height: 90vh;
+}
+.login {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login__title {
+    color: $color-04;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.5;
+    font-family: $display;
+}
+.login__big {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-style: normal;
+}
+.login__box {
+    background-color: $color-04;
+    border-radius: 22px;
+    padding: 2rem;
+
+    color: $color-01;
+}
+.login__form {
+    margin-bottom: 1.8rem;
+}
+
+.login__sign-up {
+    font-size: 0.9rem;
+    margin-top: 1.2rem;
+}
+.login__link {
+    color: $color-01;
+}
+
+@media (min-width: 765px) {
+    .login__box {
+        padding: 2.62rem 2.5rem;
+    }
+    .login__title {
+        font-size: 2.5rem;
+    }
+    .login__sign-up {
+        margin-top: 1.5rem;
+    }
+}

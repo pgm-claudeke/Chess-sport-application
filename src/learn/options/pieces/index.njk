@@ -1,0 +1,14 @@
+---
+title: The Pieces
+description: Learn the functions and moves of the pieces
+image: rafael-rex-felisilda-rCxTJlaU5Yc-unsplash.jpg
+tags: option
+---
+
+{% extends "layouts/columns.njk" %}
+
+{% block list %}
+    {% for p in collections.piece %}
+        {% include "components/card-small.njk" %}
+    {% endfor %}
+{% endblock %}

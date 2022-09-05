@@ -1,0 +1,4 @@
+{
+    "permalink": "community/Games/{{ title | slugify }}/",
+    "tags": "postgame"
+}

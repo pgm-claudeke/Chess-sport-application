@@ -1,0 +1,11 @@
+---
+title: play
+label: play
+---
+{% extends "layouts/list.njk" %}
+
+{% block list %}
+    {% for p in collections.game %} 
+        {% include "components/card.njk" %}
+    {% endfor %}
+{% endblock %}

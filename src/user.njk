@@ -1,0 +1,20 @@
+---
+title: user
+userImage: user.jpg
+userName: ClaudK
+level: 3
+return: /learn
+---
+{% extends "layouts/user.njk" %}
+
+{% block achievements %}
+    {% set achievementsIcon= "medal-solid.svg" %}
+    {% set achievementsName= "Victories" %}
+    {% include "components/achievements.njk" %}
+    {% set achievementsIcon= "trophy-solid.svg" %}
+    {% set achievementsName= "Trophies" %}
+    {% include "components/achievements.njk" %}
+    {% set achievementsIcon= "gear-solid.svg" %}
+    {% set achievementsName= "Settings" %}
+    {% include "components/achievements.njk" %}
+{% endblock %}

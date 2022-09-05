@@ -1,0 +1,26 @@
+---
+title: login
+btn: login
+link: /learn
+---
+{% extends "layouts/login.njk" %}
+
+{% block main %}
+<section class="section">
+    <div class="login">
+        <h1 class="login__title">Welcome To <em class="login__big">ChessDome!</em></h1>
+        <div class="login__box">
+            <form action="login" class="login__form">
+                {% set label = "E-mail" %}
+                {% set type = "text" %}
+                {% include "components/input.njk" %}
+                {% set label = "password" %}
+                {% set type = "password" %}
+                {% include "components/input.njk" %}
+            </form>
+            {% include "components/btn.njk" %}
+            <p class="login__sign-up">No account? <a class="login__link" href="">Sign Up</a></p>
+        </div>
+    </div> 
+</section>
+{% endblock %}

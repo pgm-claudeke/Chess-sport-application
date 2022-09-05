@@ -1,0 +1,11 @@
+---
+title: community
+label: read
+---
+{% extends "layouts/list.njk" %}
+
+{% block list %}
+    {% for p in collections.forum %} 
+        {% include "components/card.njk" %} 
+    {% endfor %}
+{% endblock %}

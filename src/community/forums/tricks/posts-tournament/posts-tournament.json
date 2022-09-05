@@ -1,0 +1,4 @@
+{
+    "permalink": "community/forums/Tricks/{{ title | slugify }}/",
+    "tags": "postTricks"
+}

@@ -1,0 +1,106 @@
+.footer {
+    padding: 2.5rem 2.25rem;
+}
+.footer__box {
+    max-width: 100rem;
+    width: 100%;
+    margin: 0rem auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+} 
+
+.footer__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.footer__link {
+    text-decoration: none;
+    color: $color-04;
+    font-family: $body;
+    font-size: 0.95rem;
+}
+.footer__link--info {
+    padding: 0rem 0.6rem;
+    border-right: solid 1px;
+}
+.footer__link--info:hover {
+    color: $color-01;
+}
+.footer__list-item:first-child .footer__link--info {
+    padding-left: 0;
+}
+.footer__list-item:last-child .footer__link--info {
+    padding-right: 0;
+    border-right: none;
+}
+.footer__icon {
+    width: 1.2rem;
+}
+.footer__media-name {
+    display: none;
+}
+.footer__link--media {
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+}
+.footer__link--media:hover {
+    filter: brightness(0) saturate(100%) invert(49%) sepia(84%) saturate(3993%) hue-rotate(1deg) brightness(98%) contrast(105%);
+}
+
+.subscription__lable {
+    font-size: 0.95rem;
+}
+.subscription__input-box {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    width: 100%;
+}
+.subscription__input{ 
+    border: solid 2px $color-01;
+    border-radius: 6px 0px 0px 6px;
+    background-color: transparent;
+    height: 2.5rem;
+    width: 12.68rem;
+    padding-left: 0.5rem;
+
+    color: $color-04;
+    font-size: 0.9rem;
+}
+.subscription__btn {
+    background-color: $color-01;
+    border: none;
+    border-radius: 0px 6px 6px 0px;
+    padding: 0.87rem 1.3rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: $color-04;
+}
+
+@media (min-width: 1020px) {
+    .footer__box {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer__media-name {
+        display: block;
+    }
+    .footer__list {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 0.8rem;
+    }
+    .footer__link--info {
+        padding: 0;
+        border: none;
+    }
+    .footer {
+        padding: 4.25rem 7.75rem;
+    }
+}

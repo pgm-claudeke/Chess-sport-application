@@ -1,0 +1,26 @@
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-bottom: 1.25rem;
+}
+.input__lable {
+    font-weight: bold;
+    font-size: 1rem;
+}
+.input__input {
+    border: 2px solid $color-01;
+    border-radius: 6px;
+    padding: 0.65rem;
+    font-size: 1rem;
+    width: 15rem;
+}
+
+@media (min-width: 765px) {
+    .input {
+        margin-bottom: 2.37rem;
+    }
+    .input__input {
+        width: 22.5rem;
+    }
+}

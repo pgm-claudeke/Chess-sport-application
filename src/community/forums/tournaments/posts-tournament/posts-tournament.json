@@ -1,0 +1,4 @@
+{
+    "permalink": "community/forums/Tournament/{{ title | slugify }}/",
+    "tags": "posttournament"
+}

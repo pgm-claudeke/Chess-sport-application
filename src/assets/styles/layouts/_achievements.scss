@@ -1,0 +1,82 @@
+.achievements {
+    background-color: $color-04;
+    border-radius: 10px;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+}
+.achievements__icon {
+    width: 1.7rem;
+    margin-right: 2rem;
+}
+.achievements__title {
+    color: $color-02;
+    font-family: $body;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: center;
+    width: 65%;
+}
+.achievements__collection {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: auto;
+}
+.achievements__arrow {
+    width: 1.2rem;
+}
+.achievements__arrow:hover {
+    filter: brightness(0) saturate(100%) invert(35%) sepia(85%) saturate(1892%) hue-rotate(4deg) brightness(104%) contrast(105%);
+}
+.achievements__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 90%;
+}
+.achievements__card {
+    background-color: $color-04;
+    width: 18%;
+    border-radius: 20px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.achievements__image {
+    background-color: $color-03;
+    border-radius: 12px;
+    width: 82%;
+    height: 82%;
+}
+
+@media (max-width: 1020px) {
+    .achievements__collection {
+        display: none;
+    }
+}
+@media (min-width: 1020px) {
+    .achievements{
+        background-color: transparent;
+        flex-direction: column;
+    }
+    .achievements__icon {
+        display: none;
+    }
+    .achievements__title {
+        color: $color-04;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+    .achievements:last-of-type {
+        display: none;
+    }
+}

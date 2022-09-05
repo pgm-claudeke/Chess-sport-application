@@ -1,0 +1,30 @@
+{% extends "layouts/default.njk" %}
+
+{% block main %}
+<section class="section">
+    {% include "components/return.njk" %}
+</section> 
+<section class="section">
+    <h1>{{ title }}</h1>
+    <div class="content">
+        <div class="content__box content__box--image content__box--border">
+            <img class="content__img" src="/images/{{ top }}" alt="{{ top }}">
+        </div>
+        <div class="content__box"> 
+            {% block top %}
+                
+            {% endblock %}
+        </div>
+    </div>
+    <div class="content content--reverse">
+        <div class="content__box content__box--image">
+            <img class="content__img" src="/images/{{ bottom }}" alt="{{ bottom }}">
+        </div>
+        <div class="content__box">
+            {% block bottom %}
+                
+            {% endblock %}
+        </div> 
+    </div>
+<section>
+{% endblock %} 

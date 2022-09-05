@@ -1,0 +1,25 @@
+{
+    "name": "eleventy-app",
+    "version": "1.0.0",
+    "description": "Eleventy based web app",
+    "main": "index.js",
+    "scripts": {
+        "build": "npx @11ty/eleventy",
+        "serve": "npx @11ty/eleventy --serve",
+        "watch": "npx sass src/assets/styles/main.scss src/assets/styles/main.css --watch",
+        "start": "concurrently npm:serve npm:watch"
+    },
+    "keywords": [
+        "Eleventy",
+        "App",
+        "SCSS",
+        "SSG"
+    ],
+    "author": "Claudine de Kesel",
+    "license": "MIT",
+    "devDependencies": {
+        "@11ty/eleventy": "^1.0.0",
+        "concurrently": "^7.0.0",
+        "sass": "^1.49.9"
+    }
+}

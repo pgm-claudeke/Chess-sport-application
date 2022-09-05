@@ -1,0 +1,14 @@
+---
+title: Tricks
+description: play some puzzles to learn
+image: rafael-rex-felisilda-rCxTJlaU5Yc-unsplash.jpg
+tags: forum
+---
+
+{% extends "layouts/forum.njk" %}
+
+{% block posts %}
+    {% for p in collections.postTricks %}
+        {% include "components/card-post.njk" %}
+    {% endfor %}
+{% endblock %}

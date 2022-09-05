@@ -1,0 +1,14 @@
+{% extends "layouts/default.njk" %}
+
+{% block main %}
+<section class="section">
+    {% include "components/return.njk" %}
+</section>
+<section class="section">
+    <ul class="list">
+        {% block list %}
+
+        {% endblock %}
+    </ul>
+</section>
+{% endblock %}

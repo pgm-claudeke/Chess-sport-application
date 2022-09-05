@@ -1,0 +1,10 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+    {% include "partials/navbar.njk" %}
+    <main>
+        {% block main %}
+        {% endblock %}
+    </main>
+    {% include "partials/footer.njk" %}
+{% endblock %}

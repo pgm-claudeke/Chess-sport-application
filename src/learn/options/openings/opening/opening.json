@@ -1,0 +1,5 @@
+{
+    "permalink": "pieces/{{ title | slugify }}/",
+    "tags": "opening",
+    "return": "/learn/openings"
+}

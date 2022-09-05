@@ -1,0 +1,15 @@
+{% extends "layouts/base.njk" %}
+{% block content %}
+    <header class="header">
+        <div class="navbar navbar--login">
+            <a href="/" class="navbar__logo">
+                <img class="logo logo--header" src="/icons/logo.svg" alt="">
+            </a>
+        </div>
+    </header>
+    <main class="main--login">
+        {% block main %}
+            
+        {% endblock %}
+    </main>
+{% endblock %}

@@ -1,0 +1,11 @@
+---
+title: learn
+label: learn
+---
+{% extends "layouts/list.njk" %}
+
+{% block list %}
+    {% for p in collections.option %}
+        {% include "components/card.njk" %}
+    {% endfor %}
+{% endblock %} 

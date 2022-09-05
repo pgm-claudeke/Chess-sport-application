@@ -1,0 +1,15 @@
+{% extends "layouts/default.njk" %}
+
+{% block main %}
+    <section class="section">
+        {% include "components/return.njk" %}
+    </section>
+    <section>
+        {% include "components/card-user.njk" %}
+    </section>
+    <section>
+        {% block achievements %}
+            
+        {% endblock %}
+    </section>
+{% endblock %}

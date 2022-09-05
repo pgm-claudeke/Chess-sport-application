@@ -1,0 +1,24 @@
+.return {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+    color: $color-04;
+    opacity: 0.4;
+    margin-bottom: 2rem;
+}
+.return__img {
+    width: 1.3rem;
+}
+.return__text {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@media (min-width: 1020px) {
+    .return {
+        display: none;
+    }
+}

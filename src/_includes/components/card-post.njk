@@ -1,0 +1,17 @@
+<li class="card-post">
+    <div class="card-post__user">
+        <div class="user user--small">
+            <img class="user__img" src="/images/{{ p.data.userImage }}" alt="2018-05-19 14/49/31.511.jpeg">
+        </div>
+        <p class="card-post__username">{{ p.data.userName }}</p>
+    </div>
+    <div class="card-post__content">
+        <h3 class="card-post__title">{{ p.data.title }}</h3>
+        <p class="card-post__text">{{ p.data.message }}</p>
+        <button class="card-post__btn">Reply</button>
+    </div>
+    <div class="card-post__reply card-post__reply--hide">
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <a href="" class="btn btn--reply">send</a>
+    </div>
+</li>

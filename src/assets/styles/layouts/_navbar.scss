@@ -1,0 +1,123 @@
+.header {
+    padding: 1rem 1.5rem;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.253);
+}
+@media (min-width: 1020px) {
+    .header {
+        padding: 1.3rem 5rem;
+    }
+
+}
+
+.navbar {
+    background-color: $color-02;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 115rem;
+    width: 100%;
+    margin: 0rem auto;
+}
+.navbar--login {
+    justify-content: center;
+}
+.navbar__right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+}
+.navbar__pages {
+    display: block;
+}
+.navbar__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 3.37rem;
+}
+.navbar__link {
+    text-decoration: none;
+    color: $color-04;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.navbar__link:hover {
+    color: $color-01;
+}
+@media (min-width: 1020px) {
+    .navbar--login {
+        justify-content: flex-start;
+    }
+}
+@media (max-width: 1020px) {
+    .navbar__pages {
+        display: none;
+    }
+}
+
+/* NAVBAR SMALL WITH  POP UP*/
+.navbar__icon{
+    height: 1.6rem;
+    display: none;
+}
+.navbar-pop {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 60%;
+    height: 100%;
+
+    background-color: $color-02;
+    padding: 2rem;
+
+    transition: 0.2s ease-in;
+
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.navbar-pop__list {
+    list-style: none;
+}
+.navbar-pop__page {
+    text-decoration: none;
+    color: $color-04;
+    line-height: 3;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navbar-pop__page:hover {
+    color: $color-01;
+}
+.navbar-pop__close{
+    width: 1rem;
+    height: fit-content;
+}
+.show {
+    left: 0;
+}
+.hide {
+    left: -50rem;
+}
+
+@media (max-width: 1020px) {
+    .navbar__icon{
+        display: block;
+    }
+    .navbar-pop {
+        display: flex;
+    }
+}
+
+.selected {
+    padding-bottom: 0.3rem;
+    border-bottom: $color-01 solid 4px;
+}
+
+

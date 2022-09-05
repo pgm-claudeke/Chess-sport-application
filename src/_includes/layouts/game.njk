@@ -1,0 +1,24 @@
+{% extends "layouts/default.njk" %}
+
+{% block main %}
+<section class="section">
+    {% include "components/return.njk" %}
+</section>
+<section class="section">
+    <div class="game">
+        <div class="game__left">
+            {% block left %}
+                
+            {% endblock %}
+        </div>
+        <div class="board">
+            <img class="board__img" src="/images/chessboard.png" alt="">
+        </div>
+        <div class="game__right">
+            {% block right %}
+                
+            {% endblock %}
+        </div>
+    </div>
+</section>
+{% endblock %}

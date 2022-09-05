@@ -1,0 +1,14 @@
+---
+title: Tournaments
+description: play some puzzles to learn
+image: felix-mittermeier-nAjil1z3eLk-unsplash.jpg
+tags: forum
+---
+
+{% extends "layouts/forum.njk" %}
+
+{% block posts %}
+    {% for p in collections.posttournament %}
+        {% include "components/card-post.njk" %}
+    {% endfor %}
+{% endblock %}
